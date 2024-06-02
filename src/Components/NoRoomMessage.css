@@ -1,0 +1,44 @@
+/* NoRoomMessage.module.css */
+
+
+
+.noRoom-container {
+  display: flex;
+  margin-left: 450px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.noRoom-content {
+  padding: 20px;
+  text-align: center;
+  flex: 1; /* Ensures it takes the remaining space after the sidebar */
+}
+
+.noRoom-heading {
+  color: #333; /* Dark grey color for heading */
+  padding-bottom: 10px;
+
+}
+
+.noRoom-message {
+  color: #666; /* Lighter grey color for the text */
+  margin-bottom: 20px; /* Adds space below the paragraph */
+}
+
+.noRoom-button {
+  padding: 13px 20px;
+  cursor: pointer;
+  background-color: #ff5100; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.noRoom-button:hover {
+  background-color: #ff7300; /* A darker shade of blue for hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

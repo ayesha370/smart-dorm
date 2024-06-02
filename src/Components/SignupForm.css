@@ -1,0 +1,67 @@
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures the container takes the full width */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    margin-left: 130px;
+
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sign-form-group {
+    width: 100%; /* Ensures each group takes full width */
+    margin-bottom: 15px;
+    margin-top: 6px;
+  }
+  
+  .sign-form-control {
+    width: 100%;
+  min-width: 100%; /* Ensure minimum width is full */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  
+  .signup-button {
+    width: 100%; /* Button takes full width */
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff5100;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+  }
+  
+  .signup-button:hover {
+    background-color: #ff7300;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-form-container {
+      padding: 10px;
+      height: auto; /* Adjusts for mobile view */
+    }
+    .signup-form {
+      box-shadow: none;
+    }
+  }
+  

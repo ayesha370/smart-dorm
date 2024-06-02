@@ -1,0 +1,172 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px; /* Slightly decreased width */
+  height: 100vh;
+  background-color: #0c1a47;
+  color: white;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column; /* Organizes children vertically */
+  justify-content: space-between; /* Pushes header and footer to the edges */
+  position: fixed; /* Fix sidebar position */
+  overflow-y: auto; /* Enable scrolling on the sidebar if needed */
+  flex-shrink: 0;
+}
+
+.sidebar.collapsed {
+  width: 70px; /* Decreased width for collapsed state */
+}
+.sidebar-top {
+  width: 240px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo {
+  height: 90px;
+  width: 100px;
+}
+
+.sidebar-logo span {
+  font-size: 50px; /* Or your desired size */
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+
+.sidebar-menu,
+.sidebar-bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns menu items to the top */
+}
+
+.sidebar-menu {
+  padding-left: 5%; /* Add left margin */
+  padding-right: 5%; /* Add right margin */
+  margin-top: 10px; /* Additional top margin for menu items */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar li {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.sidebar li .icon {
+  margin-right: 10px;
+}
+
+.sidebar-bottom {
+  justify-content: flex-end; /* Pushes settings and logout to the bottom */
+  padding-left: 5%; /* Left margin for bottom items */
+  padding-right: 5%; /* Right margin for bottom items */
+}
+
+.sidebar .sidebar-toggle {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1e2749;
+  color: white;
+  font-size: 18px; /* Adjust as needed */
+  position: absolute; /* Ensures the toggle is always at the bottom */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.sidebar .sidebar-toggle:hover {
+  background-color: #29365f;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.sidebar li:hover {
+  background-color: #29365f;
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Adding specific toggle icons */
+.sidebar.expanded .sidebar-toggle:before {
+  content: '◀'; /* Arrow pointing left for expanded state */
+}
+
+.sidebar.collapsed .sidebar-toggle:before {
+  content: '▶'; /* Arrow pointing right for collapsed state */
+}
+
+.sidebar.collapsed .sidebar-menu {
+  align-items: center; /* Center menu items when collapsed */
+}
+
+.sidebar.collapsed .sidebar-bottom:before {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content when sidebar is collapsed */
+  padding: 15px 0; /* Add padding on top and bottom */
+}
+
+/* Styles for tablets or smaller laptop screens */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 200px; /* Smaller sidebar for smaller screens */
+  }
+
+  .content {
+    margin-left: 200px; /* Adjust the margin to match the new sidebar width */
+  }
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 70px; /* Collapsed sidebar on very small screens */
+  }
+
+  .content {
+    margin-left: 70px; /* Adjust the margin to match the new sidebar width */
+    padding: 10px; /* Maybe add padding for better readability on small screens */
+  }
+
+  /* Make sure sidebar is not fixed for small devices */
+  .sidebar,
+  .sidebar.collapsed {
+    position: static;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .sidebar .sidebar-toggle {
+    display: none; /* Hide the toggle on small screens if not needed */
+  }
+}

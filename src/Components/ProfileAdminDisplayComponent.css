@@ -1,0 +1,102 @@
+/* ProfileAdminDisplay.css */
+.admin-profile-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 340px;
+  height: 100vh;
+}
+
+.admin-break {
+  margin-top: 8px;
+}
+
+.admin-profile-card {
+  height: 70vh;
+  width: 45rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.admin-profile-card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.admin-profile-icon {
+  margin-bottom: 0.5rem;
+}
+
+.admin-profile-details-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.admin-profile-details-left,
+.admin-profile-details-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.admin-profile-details-right {
+  align-items: flex-end;
+  padding-right: 15px;
+}
+
+.admin-profile-details-left {
+  padding-left: 30px;
+}
+
+.admin-profile-card-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+
+
+.admin-profile-card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile-card-info {
+  font-weight: normal;
+  color: #333;
+  margin-left: 10px; /* Space between label and value */
+}
+
+.admin-profile-edit-button {
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #ff5100;
+  display: inline-block;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 120px;
+  height: 35px;
+}
+
+.admin-profile-edit-button:hover {
+  background-color: #ff7300;
+  transform: translateY(-2px);
+}
+
+.admin-profile-edit-link {
+  text-decoration: none;
+  color: inherit;
+}

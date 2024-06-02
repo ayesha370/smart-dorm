@@ -1,0 +1,98 @@
+.room-request-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Take up remaining space */
+  margin-top: 200px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  margin-left: 160px;
+}
+
+.room-request-form {
+  width: 100%;
+  max-width: 550px; /* Match the width of the leave request form */
+  padding: 15px 30px; /* Padding like the leave request form */
+  background: #fff;
+  border-radius: 4px; /* Border radius like the leave request form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding box-shadow */
+  margin-top: 10px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column; /* Aligns form items in a column */
+  margin-left: 50px;
+}
+
+.room-request-form .leave-form-group {
+  margin-bottom: 20px; /* Space between form groups */
+  height: 63px;
+}
+
+.leave-form-control,
+.room-request-form .leave-form-group input[type='date'],
+.room-request-form .leave-form-group input[type='text'] {
+  width: 87%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.room-request-form label {
+  display: block;
+  margin-bottom: 5px; /* Space below label */
+}
+
+.leave-form-control {
+  width: 100%;
+  padding: 10px; /* Padding like the leave request form */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Border radius like the leave request form */
+  box-sizing: border-box;
+}
+
+.request-form .submit-button {
+  width: 86%; /* Adjust width to your preference */
+  padding: 12px 30px; /* Consistent padding with the allocation button */
+  border: none;
+  border-radius: 6px; /* Slightly rounded for a modern look */
+  background-color: #ff5100; /* Matching coral color for aesthetics */
+  color: white;
+  font-size: 16px; /* Maintains readability */
+  font-weight: 600; /* Bold font weight for emphasis */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for interactivity */
+  display: block; /* Allows the use of margin for centering */
+  margin: 10px auto; /* Centers button and adds space */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  outline: none; /* Removes the outline to maintain focus on button aesthetics */
+  align-self: center; /* Ensures button is centered in its container */
+  margin-right: 70px; /* Additional right margin if needed */
+}
+
+.submit-button:hover {
+  background-color: #ff7300; /* Darker shade on hover for visual feedback */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for a 'lifted' effect */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.submit-button:active {
+  transform: translateY(1px); /* Mimics a button press effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduces shadow for a 'pressed' effect */
+}
+.static .static-field {
+  border: none;
+}
+
+/* Responsive design for the room request form */
+@media (max-width: 768px) {
+  .room-request-form-container {
+    padding: 20px;
+  }
+  .room-request-form {
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+}

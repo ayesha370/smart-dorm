@@ -1,0 +1,101 @@
+.room-allocation-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 20px; /* Adjust the vertical padding to ensure the form is centered with space around it */
+  margin-left: 170px;
+}
+
+.room-allocation-form {
+  width: 50%; /* Use full width */
+  max-width: 1000px; /* Increase the width for a more spacious form */
+  height: 700px; /* Increase the height for even spacing */
+  background: #fff;
+  padding: 30px; /* Increase padding for more internal space */
+  border-radius: 8px; /* Slightly rounder corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 300px;
+}
+
+.form-header {
+  font-size: 28px; /* Slightly larger header */
+  color: #333;
+  margin-bottom: 10px; /* More space below the header */
+  margin-top: 5px;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-bottom: 20px; /* Increase space between rows */
+}
+
+.room-form-group {
+  flex-basis: calc(50% - 20px); /* Calculate width to ensure even spacing */
+  margin-bottom: 20px; /* Align with the new spacing */
+  margin-left: 30px;
+}
+
+.room-form-group:not(:last-child) {
+  margin-right: 40px; /* Space between the two form groups in a row */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* More space below the label */
+}
+
+.room-allocation-form .room-form-control {
+  width: 100%;
+  padding: 10px; /* More padding for input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px; /* Ensure there's a small space above the form control */
+}
+.room-allocation-form .allocation-button {
+  width: 87%; /* Let the button width be determined by its content */
+  padding: 12px 30px; /* Adequate padding for clickable area */
+  border: none;
+  border-radius: 6px; /* More rounded corners for a modern look */
+  background-color: #ff5100; /* Coral color for a fresh look */
+  color: white;
+  font-size: 16px; /* Optimal font size for readability */
+  font-weight: 600; /* Making the text a bit bolder */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for multiple properties */
+  display: block; /* Change to block to use margin auto for centering */
+  margin: 20px auto; /* Center the button horizontally with auto margin */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  outline: none; /* Remove the outline to keep the aesthetic focus */
+  align-self: center; /* Ensures center alignment without full width */
+  margin-right: 40px;
+}
+
+.allocation-button:hover {
+  background-color: #ff7300; /* Slightly darker shade on hover for feedback */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover for pop effect */
+  transform: translateY(-2px); /* Slight upward lift */
+}
+
+.allocation-button:active {
+  transform: translateY(1px); /* Pressed-in effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow for the pressed effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .room-form-group {
+    flex-basis: 100%; /* Full width on small screens */
+    margin-right: 0; /* Reset the margin for small screens */
+  }
+  .allocation-button {
+    width: 100%; /* Full width button on small screens */
+  }
+}

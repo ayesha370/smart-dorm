@@ -1,0 +1,102 @@
+.setting-profile-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 400px;
+}
+
+.setting-profile-container h2, .setting-profile-container p {
+  text-align: center;
+}
+
+.setting-description-text {
+  color: gray;
+  font-size: 14px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.setting-form-row {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px; /* Adds spacing between each form-row and the next element */
+  padding-top: 10px;
+}
+
+.setting-form-group {
+  flex: 1;
+  margin-right: 40px; /* Spacing between form groups, increase if needed */
+}
+
+.setting-form-group:last-child {
+  margin-right: 0; /* Removes margin for the last element in a row */
+}
+
+.setting-form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.setting-form-group input, .setting-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Adding a container for the button to align it to the right */
+.setting-button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+}
+
+.setting-button {
+  width: 200px; /* Full width for better mobile responsiveness */
+  padding: 9px 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff5100;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto;  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  align-self: center; 
+}
+
+.setting-button:hover {
+  background-color: #ff7300;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);}
+
+  .submit-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 768px) {
+  .setting-form-row {
+    flex-direction: column;
+  }
+
+  .setting-form-group {
+    margin-right: 0; /* Ensure there's no right margin on*/
+    margin-bottom: 0;
+  }
+}

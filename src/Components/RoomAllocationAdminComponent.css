@@ -1,0 +1,125 @@
+.room-allocation-admin {
+  font-family: 'Arial', sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  margin-left: 240px;
+}
+
+.room-controls {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-right: 5px;
+}
+.room-table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  width: 100%; /* Adjust this as necessary to fit within your layout */
+}
+
+button {
+  margin-right: 10px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  color: white; /* White text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out; /* Smooth transitions for interactions */
+
+  /* Enhancing the hover and active states for better interaction feedback */
+  &:hover {
+    opacity: 1; /* Full opacity on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+
+  &:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* Smaller shadow when pressed */
+    transform: translateY(1px); /* Simulate button press */
+  }
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.confirm {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.cancel {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.room-table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-left: 10px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkbox {
+  width: 50px;
+}
+
+th {
+  background-color: #f9f9f9;
+  min-width: 70%;
+}
+
+.no-allocations {
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+/* Styles for each pagination item */
+.page-item {
+  display: inline; /* Displays items in a line */
+}
+
+/* Styles for links within pagination items */
+.page-link {
+  color: #007bff; /* Sets the text color */
+  padding: 8px 16px; /* Adds padding for a larger clickable area */
+  text-decoration: none; /* Removes underline from links */
+  border: 1px solid #dee2e6; /* Adds a subtle border */
+  margin: 0 4px; /* Spaces out the items slightly */
+}
+
+/* Adds a hover effect for the links */
+.page-link:hover {
+  color: #0056b3; /* Darker blue text on hover */
+  background-color: #e9ecef; /* Light grey background on hover */
+  border-color: #dee2e6; /* Keeps the border color consistent */
+}
+
+/* Active page link styling */
+.page-link.active {
+  background-color: #007bff; /* Blue background for active link */
+  color: white; /* White text for active link */
+  border-color: #007bff; /* Blue border for active link */
+}

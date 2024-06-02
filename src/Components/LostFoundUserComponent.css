@@ -1,0 +1,95 @@
+.lost-found-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will make it align vertically */
+  flex-grow: 1; /* Take the remaining space beside the sidebar */
+  margin-top: 36px;
+  margin-bottom: 150px;
+  margin-left: 100px;
+}
+
+.form-header {
+  padding-bottom: 10px;
+}
+
+.lost-found-form {
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 170px;
+  margin-left: 80px;
+}
+
+.lost-form-groups {
+  width: 550px; /*width of input fieldds */
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.static,
+.form-control,
+select,
+textarea,
+input[type='date'] {
+  background-color: #f3f3f3; /* Consistent background color */
+  padding: 10px;
+  border-radius: 4px;
+  width: 87%; /* Ensuring full width for all input types */
+  border: 1px solid #ccc; /* Consistent border for all */
+  box-sizing: border-box;
+}
+
+.static-field {
+  font-weight: bold;
+}
+
+.lost-found-form .submit-button {
+  width: 480px; /* Full width for better mobile responsiveness */
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff5100;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 25px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background-color: #ff7300;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .lost-found-form-container {
+    padding: 20px;
+  }
+  .lost-found-form {
+    box-shadow: none;
+  }
+}

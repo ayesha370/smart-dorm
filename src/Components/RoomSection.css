@@ -1,0 +1,48 @@
+/* RoomSection.css */
+.room-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .room-section .section-title {
+    font-weight: bold;
+  }
+  
+  .room-section .icon {
+    margin-left: 0.5rem; /* Space between text and icon */
+  }
+  
+  .room-section .collapse-section {
+    display: none; /* Initially hidden */
+    padding: 10px 0;
+  }
+  
+  .room-section .collapse-section.open {
+    display: block; /* Show content when 'open' */
+  }
+  
+  .dashboard-container {
+    padding: 20px;
+  }
+  
+  .dashboard-container .room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap as needed */
+  }
+  
+  .dashboard-container .room {
+    padding: 10px;
+    background-color: green;
+    border: 1px solid #ccc; /* Adjust the border color as needed */
+    flex: 1;
+    color:white;
+    text-align: center;
+  }
+  
+  .dashboard-container .room.booked {
+    background-color: red;
+    color: white;
+  }
